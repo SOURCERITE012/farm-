@@ -8,10 +8,10 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #000; /* Fallback color */
-      color: #ffd700;
-      position: relative; /* For overlay positioning */
-      min-height: 100vh; /* Ensure body covers viewport */
+      background-color: #fff; /* white background */
+      color: #006400; /* dark green text */
+      position: relative;
+      min-height: 100vh;
     }
     body::before {
       content: '';
@@ -20,19 +20,19 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background-image: url('background.jpg'); /* Replace with your background image path */
+      background-image: url('background.jpg'); /* Your background image */
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
-      opacity: 0.3; /* Adjust opacity for readability */
-      z-index: -1; /* Place behind content */
+      opacity: 0.15; /* lighter overlay for white bg */
+      z-index: -1;
     }
     header {
-      background-color: #ffd700;
-      color: #000;
+      background-color: #006400; /* dark green header */
+      color: #fff; /* white text */
       padding: 20px;
       text-align: center;
-      position: relative; /* Ensure header is above background */
+      position: relative;
     }
     header img {
       height: 80px;
@@ -43,28 +43,44 @@
     }
     .welcome {
       padding: 40px 20px;
-      background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent for readability */
+      background-color: rgba(0, 100, 0, 0.1); /* very light transparent green */
       text-align: center;
       position: relative;
     }
     .welcome h2 {
-      color: #ffd700;
+      color: #006400;
       font-size: 2.5em;
       margin: 0 0 10px;
     }
     .welcome p {
       font-size: 1.2em;
       max-width: 600px;
-      margin: 0 auto;
+      margin: 0 auto 30px;
+    }
+    .welcome .btn {
+      background-color: #006400;
+      color: white;
+      padding: 12px 30px;
+      border: none;
+      border-radius: 25px;
+      font-weight: bold;
+      font-size: 1.1em;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      transition: background 0.3s;
+    }
+    .welcome .btn:hover {
+      background-color: #004d00;
     }
     .specializations {
       padding: 30px 20px;
-      background-color: rgba(17, 17, 17, 0.8); /* Semi-transparent for readability */
-      color: #ffd700;
-      position: relative; /* Ensure content is above background */
+      background-color: rgba(0, 100, 0, 0.05); /* subtle light green background */
+      color: #006400;
+      position: relative;
     }
     .specializations h2 {
-      color: #ffd700;
+      color: #006400;
       font-size: 1.5em;
     }
     .specializations ul {
@@ -86,15 +102,15 @@
     .specializations li::before {
       content: '➡️';
       margin-right: 10px;
-      color: #ffd700;
+      color: #006400;
     }
     .specializations img {
       width: 100px;
       height: 100px;
       object-fit: cover;
       border-radius: 5px;
-      border: 2px solid #ffd700;
-      box-shadow: 0 2px 6px rgba(255, 215, 0, 0.5);
+      border: 2px solid #006400;
+      box-shadow: 0 2px 6px rgba(0, 100, 0, 0.3);
     }
     .gallery {
       display: flex;
@@ -102,7 +118,7 @@
       gap: 15px;
       padding: 20px;
       justify-content: center;
-      background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent for readability */
+      background-color: rgba(240, 255, 240, 0.6); /* very light greenish white */
       position: relative;
     }
     .gallery img {
@@ -110,32 +126,32 @@
       height: 200px;
       object-fit: cover;
       border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(255, 215, 0, 0.5);
-      border: 2px solid #ffd700;
+      box-shadow: 0 2px 6px rgba(0, 100, 0, 0.3);
+      border: 2px solid #006400;
     }
     .socials {
       text-align: center;
       padding: 30px 10px;
-      background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent for readability */
+      background-color: rgba(240, 255, 240, 0.6);
       position: relative;
     }
     .socials a {
       display: inline-block;
       margin: 0 10px;
       padding: 10px 20px;
-      background-color: #ffd700;
-      color: #000;
+      background-color: #006400;
+      color: #fff;
       text-decoration: none;
       border-radius: 25px;
       font-weight: bold;
       transition: background 0.3s;
     }
     .socials a:hover {
-      background-color: #ff9900;
+      background-color: #004d00;
     }
     footer {
-      background-color: #ffd700;
-      color: #000;
+      background-color: #006400;
+      color: #fff;
       text-align: center;
       padding: 15px;
       position: relative;
@@ -147,10 +163,13 @@
     <img src="logo.png" alt="SOURCERITE FARMS Logo" />
     <h1>SOURCERITE FARMS</h1>
   </header>
+
   <section class="welcome">
     <h2>Welcome to SOURCERITE FARMS</h2>
     <p>Discover sustainable agriculture with our expertise in fish production, farm setup, and agribusiness solutions. Join us in cultivating a greener future!</p>
+    <a href="catalogue.html" class="btn">View Catalogue</a>
   </section>
+
   <section class="specializations">
     <h2>We specialize in:</h2>
     <ul>
@@ -162,6 +181,7 @@
       <li><img src="agribusiness.jpg" alt="Agribusiness Solutions">And general agribusiness solutions</li>
     </ul>
   </section>
+
   <section class="gallery">
     <img src="tilapia.jpg" alt="Tilapia Production" />
     <img src="smoked-catfish-logo.png" alt="Smoked Catfish Processing" />
@@ -170,6 +190,7 @@
     <img src="produce.jpg" alt="Agricultural Produce" />
     <img src="agribusiness.jpg" alt="Agribusiness Solutions" />
   </section>
+
   <div class="socials">
     <a href="#" target="_blank">Facebook</a>
     <a href="#" target="_blank">Instagram</a>
@@ -186,6 +207,7 @@
       WhatsApp
     </a>
   </div>
+
   <footer>
     © 2025 SOURCERITE FARMS. All rights reserved.
   </footer>
