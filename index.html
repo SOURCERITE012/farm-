@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>SOURCERITE FARMS</title>
+  <title>SOURCERITE FARMS - Catalogue</title>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #fff; /* white background */
-      color: #006400; /* dark green text */
+      background-color: #fff;
+      color: #006400;
       position: relative;
       min-height: 100vh;
     }
@@ -20,16 +20,16 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background-image: url('background.jpg'); /* Your background image */
+      background-image: url('background.jpg');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
-      opacity: 0.15; /* lighter overlay for white bg */
+      opacity: 0.15;
       z-index: -1;
     }
     header {
-      background-color: #006400; /* dark green header */
-      color: #fff; /* white text */
+      background-color: #006400;
+      color: #fff;
       padding: 20px;
       text-align: center;
       position: relative;
@@ -41,47 +41,17 @@
       margin: 10px 0 0;
       font-size: 2em;
     }
-    .welcome {
-      padding: 40px 20px;
-      background-color: rgba(0, 100, 0, 0.1); /* very light transparent green */
-      text-align: center;
-      position: relative;
-    }
-    .welcome h2 {
-      color: #006400;
-      font-size: 2.5em;
-      margin: 0 0 10px;
-    }
-    .welcome p {
-      font-size: 1.2em;
-      max-width: 600px;
-      margin: 0 auto 30px;
-    }
-    .welcome .btn {
-      background-color: #006400;
-      color: white;
-      padding: 12px 30px;
-      border: none;
-      border-radius: 25px;
-      font-weight: bold;
-      font-size: 1.1em;
-      cursor: pointer;
-      text-decoration: none;
-      display: inline-block;
-      transition: background 0.3s;
-    }
-    .welcome .btn:hover {
-      background-color: #004d00;
-    }
     .specializations {
       padding: 30px 20px;
-      background-color: rgba(0, 100, 0, 0.05); /* subtle light green background */
+      background-color: rgba(0, 100, 0, 0.05);
       color: #006400;
       position: relative;
     }
     .specializations h2 {
       color: #006400;
       font-size: 1.5em;
+      text-align: center;
+      margin-bottom: 20px;
     }
     .specializations ul {
       list-style: none;
@@ -118,7 +88,7 @@
       gap: 15px;
       padding: 20px;
       justify-content: center;
-      background-color: rgba(240, 255, 240, 0.6); /* very light greenish white */
+      background-color: rgba(240, 255, 240, 0.6);
       position: relative;
     }
     .gallery img {
@@ -149,6 +119,13 @@
     .socials a:hover {
       background-color: #004d00;
     }
+    .socials a.whatsapp {
+      background-color: #25D366;
+      margin-left: 10px;
+    }
+    .socials a.whatsapp:hover {
+      background-color: #128C7E;
+    }
     footer {
       background-color: #006400;
       color: #fff;
@@ -163,12 +140,6 @@
     <img src="logo.png" alt="SOURCERITE FARMS Logo" />
     <h1>SOURCERITE FARMS</h1>
   </header>
-
-  <section class="welcome">
-    <h2>Welcome to SOURCERITE FARMS</h2>
-    <p>Discover sustainable agriculture with our expertise in fish production, farm setup, and agribusiness solutions. Join us in cultivating a greener future!</p>
-    <a href="catalogue.html" class="btn">View Catalogue</a>
-  </section>
 
   <section class="specializations">
     <h2>We specialize in:</h2>
@@ -194,18 +165,7 @@
   <div class="socials">
     <a href="#" target="_blank">Facebook</a>
     <a href="#" target="_blank">Instagram</a>
-    <a href="https://wa.me/2349061593716" target="_blank" style="
-        background-color: #25D366;
-        color: white;
-        padding: 10px 20px;
-        border-radius: 25px;
-        font-weight: bold;
-        text-decoration: none;
-        transition: background 0.3s;
-        margin-left: 10px;
-      ">
-      WhatsApp
-    </a>
+    <a href="https://wa.me/2349061593716" target="_blank" class="whatsapp">WhatsApp</a>
   </div>
 
   <footer>
